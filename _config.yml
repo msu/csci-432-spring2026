@@ -1,0 +1,8 @@
+# Site settings
+title: CSCI 432, Spring 2026 
+
+email: brittany.fasy@montana.edu
+lang: en-US
+theme: jekyll-theme-leap-day
+url:  https://msu.github.io/csci-432-spring2026 # the base hostname & protocol for your site
+git_address: https://github.com/brittany/csci-432-spring2026 
