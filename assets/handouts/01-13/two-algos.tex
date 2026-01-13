@@ -1,0 +1,145 @@
+\documentclass{article}
+
+\usepackage{../handouts}
+
+\title{Search Algorithms}
+\author{CSCI 432}
+
+\begin{document}
+\maketitle
+
+\noindent
+Name:\\
+Who did you work with today?
+
+\section*{Two Algorithms}
+
+The following two algorithms takes as input a array $L$ of real numbers
+and a query $q$ (a real number).
+
+\begin{minipage}{0.46\textwidth}
+\begin{algorithm}[H]
+    \caption{Search I}
+    %
+    \begin{algorithmic}[1]
+        \REQUIRE $L$, a list of real numbers
+
+        \ENSURE $q$, a query element (a real number)
+
+        \STATE $found \gets$ FALSE
+
+        \FOR {$i= 1$ to $|L|$}
+            \IF {q=L(i)}
+                \STATE $found \gets$ TRUE
+            \ENDIF
+        \ENDFOR
+
+        \RETURN $found$
+
+    \end{algorithmic}
+\end{algorithm}
+\end{minipage}%
+\hfill%
+\begin{minipage}{0.46\textwidth}
+\begin{algorithm}[H]
+    \caption{Search II}
+    %
+    \begin{algorithmic}[1]
+        \REQUIRE $L$, a list of $n$ real numbers
+
+        \ENSURE $q$, a query element (a real number)
+
+        \STATE $found \gets$ FALSE
+        \STATE $left \gets 1$
+        \STATE $right \gets n$
+
+        \WHILE{$left < right$}
+            \STATE $mid \gets \ceil{\frac{left + right}{2}}$
+            \IF {q=L(i)}
+                \STATE $found \gets$ TRUE
+            \ENDIF
+            \IF{L[mid]=q}
+                \STATE $found \gets$ TRUE
+            \ELSIF{$L[mid]<q$}
+                \STATE $left \gets mid+1$
+            \ELSE
+                \STATE $right \gets mid-1$
+            \ENDIF
+        \ENDWHILE
+
+        \RETURN $found$
+
+    \end{algorithmic}
+\end{algorithm}
+\end{minipage}
+
+Discuss the following questions:
+
+\begin{enumerate}
+    \item What do these algorithms do?
+    \item Are these two pseudo-code examples of the same algorithm? Why or why
+        not?
+    \item Do the two have the same runtimes?
+    \item Is one algorithm better than the other?
+    \item What are the common names of these two algorithms?
+\end{enumerate}
+
+
+
+\pagebreak
+\section*{Two Linear Search Algorithms}
+
+The following algorithm takes as input a array $L$ of real numbers
+and a query element $q$ (a real number), and returns
+true if the element $q$ is in the list $L$ and false otherwise.
+
+\begin{algorithm}[h]
+    \caption{Linear Search II}
+    %
+    \begin{algorithmic}[1]
+        \REQUIRE $L$, a list of real numbers
+
+        \ENSURE $q$, a query element (a real number)
+
+        \STATE $found \gets$ FALSE
+
+        \FOR {$i= 1$ to $|L|$}
+            \IF {q=L(i)}
+                \STATE $found \gets$ TRUE
+            \ENDIF
+        \ENDFOR
+
+        \RETURN $found$
+
+    \end{algorithmic}
+\end{algorithm}
+
+\begin{algorithm}[h]
+    \caption{Linear Search II}
+    %
+    \begin{algorithmic}[1]
+        \REQUIRE $L$, a list of real numbers
+
+        \ENSURE $q$, a query element (a real number)
+
+        \FOR {$i= 1$ to $|L|$}
+            \IF {q=L(i)}
+                \RETURN TRUE
+            \ENDIF
+        \ENDFOR
+
+        \RETURN FALSE
+
+    \end{algorithmic}
+\end{algorithm}
+
+
+Discuss the following questions:
+
+\begin{enumerate}
+    \item Are these two pseudo-code examples of the same algorithm? Why or why
+        not?
+    \item Do the two have the same runtimes?
+\end{enumerate}
+
+\end{document}
