@@ -18,18 +18,16 @@ Where? Romney 315
 
 MSU Course Catalog Description: 
 ```
-A rigorous examination of advanced
-algorithms and data structures. Topics include average case analysis,
-probabilistic algorithms, advanced graph problems and theory, distributed and
-parallel programming.
+A rigorous examination of advanced algorithms and data structures. Topics
+include average case analysis, probabilistic algorithms, advanced graph problems
+and theory, distributed and parallel programming.
 ```
 
 From the Instructor: 
 ```
-This course is NOT a programming class, and is not
-structured like the 132 and 232 courses that precede it.  In this course, we will
-do many proofs (especially using induction), and will be writing pseudo-code, not
-code.
+This course is NOT a programming class, and is not structured like the 132 and
+232 courses that precede it.  In this course, we will do many proofs (especially
+using induction), and will be writing pseudo-code, not code.
 ```
 
 ## Prerequisites
