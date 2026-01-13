@@ -9,12 +9,6 @@ Welcome to Advanced Algorithms (CSCI 432), Spring 2026,
 taught by [Prof. Brittany Terese Fasy](https://comptag.github.io/brittany-fasy/).  This website will serve
 as the course syllabus. Please read through.
 
-## Table of Contents
-{: .no_toc .text-delta }
-
-1. TOC
-{:toc}
-
 ## Class Meetings 
 
 When? T,R 12:15-13:30\
