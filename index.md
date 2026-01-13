@@ -212,8 +212,8 @@ on source material that is not expressly acknowledged) is considered plagiarism.
 ### MSU Drug and Alcohol Policies
 
 Per the Code of Conduct for students, no student may come to class under the
-influence of drugs or alcohol, as that would not be `fostering a healthy, safe
-and productive campus and community.`  See [Alcohol and Drug Policies
+influence of drugs or alcohol, as that would not be "fostering a healthy, safe
+and productive campus and community."  See [Alcohol and Drug Policies
 Website](http://www.montana.edu/deanofstudents/alcoholanddrugs.html) for more
 information. 
 
