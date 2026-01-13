@@ -3,15 +3,14 @@ title: Introduction to Algorithms and Fundamentals Review
 ---
 
 13 Jan
-: Course Introduction 
-[(H0-1)](https://msu.github.io/csci-432-fall2023/assets/pdfs/08-23_two-algos.pdf)
-[notes](https://msu.github.io/csci-432-spring2026/assets/pdfs/01-13_notes.pdf) 
+Course Introduction 
+[[(H0-1)](https://msu.github.io/csci-432-fall2023/assets/pdfs/08-23_two-algos.pdf)]
+[[notes](https://msu.github.io/csci-432-spring2026/assets/pdfs/01-13_notes.pdf)] 
 
 15 Jan
-: **Exam**{: .label .label-purple }Prerequisite-Assessment
-
-20 Jan
-: [Induction](https://msu.github.io/csci-432-fall2023/assets/pdfs/08-28_notes.pdf) [(H0-2)](https://msu.github.io/csci-432-fall2023/assets/pdfs/08-23_horses.pdf)
+**Exam**{: .label .label-purple }Prerequisite-Assessment (30 minutes)
+: 
+[Induction](https://msu.github.io/csci-432-fall2023/assets/pdfs/08-28_notes.pdf) [(H0-2)](https://msu.github.io/csci-432-fall2023/assets/pdfs/08-23_horses.pdf)
   : [MMF Ch.11](https://mfleck.cs.illinois.edu/building-blocks/index-sp2020.html)
 
 22 Jan
