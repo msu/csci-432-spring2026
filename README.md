@@ -1,6 +1,6 @@
 ---
 layout: home
-title: CSCI 432, Fall 2023
+title: CSCI 432, Spring 2026
 nav_exclude: true
 permalink: /:path/
 seo:
@@ -10,25 +10,24 @@ seo:
 
 # Advanced Algorithms (CSCI 432)
 
-This repository is for class materials for CSCI 432 in Fall 2022, taught by Prof. Fasy.
+This repository is for class materials for CSCI 432 in Spring 2026, taught by Prof. Fasy.
 
 
 ## Description
 
 MSU Course Catalog Description: 
+
 ```
-A rigorous examination of advanced
-algorithms and data structures. Topics include average case analysis,
-probabilistic algorithms, advanced graph problems and theory, distributed and
-parallel programming.
+A rigorous examination of advanced algorithms and data structures. Topics
+include average case analysis, probabilistic algorithms, advanced graph problems
+and theory, distributed and parallel programming.
 ```
 
 From the Instructor: 
 ```
-This course is NOT a programming class, and is not
-structured like the 132 and 232 courses that precede it.  In this course, we will
-do many proofs (especially using induction), and will be writing pseudo-code, not
-code.
+This course is NOT a programming class, and is not structured like the 132 and
+232 courses that precede it.  In this course, we will do many proofs (especially
+using induction), and will be writing pseudo-code, not code.
 ```
 ## Prerequisites
 
@@ -47,9 +46,8 @@ should be familiar with:
 
 ### Course Links
 
-* [course LaTex files, including HW](https://github.com/msu/csci-432-fall2023-latex), including HWs
-* [this website](https://msu.github.io/csci-432-fall2023/)
-* [GitHub Repo for this website](https://github.com/msu/csci-432-fall2023)
+* [this website](https://msu.github.io/csci-432-spring2026/)
+* [GitHub Repo for this website](https://github.com/msu/csci-432-spring2026)
 
 ### Credits
 
