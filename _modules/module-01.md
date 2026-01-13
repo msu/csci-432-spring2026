@@ -15,7 +15,7 @@ title: Introduction to Algorithms and Fundamentals Review
 20 Jan
 : [Runtime Analysis](https://msu.github.io/csci-432-spring2026/assets/pdfs/08-30_notes.pdf) [(H0-3)](https://msu.github.io/csci-432-fall2023/assets/pdfs/HO-03_asymptotics.pdf)
   : [MMF Ch.14](https://mfleck.cs.illinois.edu/building-blocks/updates-fa2017/big-o.pdf)
+: **HW 0 due**{: .label .label-red }
 
 22 Jan
 : [Correctness of Algorithms](https://msu.github.io/csci-432-spring2026/assets/pdfs/08-30_notes.pdf) [(H0-3)](https://msu.github.io/csci-432-fall2023/assets/pdfs/HO-03_asymptotics.pdf)
-: **HW 1 due**{: .label .label-red }
