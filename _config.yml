@@ -39,7 +39,7 @@ collections:
   staffers:
   modules:
   schedules:
-  announcements:
+  project:
 # Default layouts for each collection type
 defaults:
   - scope:
@@ -62,9 +62,9 @@ defaults:
       layout: schedule
   - scope:
       path: ''
-      type: announcements
+      type: project 
     values:
-      layout: announcement
+      layout: project 
 
 compress_html:
   clippings: all
