@@ -1,11 +1,11 @@
-.announcement {
+.project {
   @extend %card;
 
   h1, h2 {
     @extend .text-gamma;
   }
 
-  .announcement-meta {
+  .project-meta {
     @extend .text-epsilon;
   }
 }
