@@ -150,8 +150,7 @@ solve these problems in the end, for job interviews and such ...
 
 ### Project
 
-Groups will be assigned. See  
-[Project]({{ site.baseurl }}/project.md) for more details
+Groups will be assigned. See [Project]({{ site.baseurl }}/project/) for more details.
 
 ### Attendance
 
