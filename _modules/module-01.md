@@ -13,7 +13,7 @@ title: Introduction to Algorithms and Fundamentals Review
   : [MMF Ch.11](https://mfleck.cs.illinois.edu/building-blocks/index-sp2020.html)
 
 20 Jan
-: [Runtime Analysis](https://msu.github.io/csci-432-spring2026/assets/pdfs/08-30_notes.pdf) [(H0-3)](https://msu.github.io/csci-432-fall2023/assets/pdfs/HO-03_asymptotics.pdf)
+: [Runtime Analysis](https://msu.github.io/csci-432-spring2026/assets/pdfs/08-30_notes.pdf) [[H0-3](https://msu.github.io/csci-432-fall2023/assets/pdfs/HO-03_asymptotics.pdf)]
   : [MMF Ch.14](https://mfleck.cs.illinois.edu/building-blocks/updates-fa2017/big-o.pdf)
 : **HW 0 due**{: .label .label-red }
 
