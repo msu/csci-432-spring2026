@@ -19,3 +19,6 @@ title: Introduction to Algorithms and Fundamentals Review
 
 22 Jan
 : [Correctness of Algorithms](https://msu.github.io/csci-432-spring2026/assets/pdfs/08-30_notes.pdf) [(H0-3)](https://msu.github.io/csci-432-fall2023/assets/pdfs/HO-03_asymptotics.pdf)
+
+24 Jan
+: [Homework-testing]({{ site.baseurl }}/assets/homework-tex/hw-0/main.tex)
