@@ -118,10 +118,19 @@ Services before the second class meeting.**
 
 Your grade for this class will be determined by:
 
-- 15% Homework
-- 20% Quizzes (Weekly on Tuesdays) 
-- 25% Project 
+- 5% In-class Assignments (Participation-based, not graded)
+- 30% Quizzes (Bi-Weekly on Tuesdays) 
 - 45% Exams
+- 10% Homework
+- 10% Project 
+
+###  Quizzes and Exams
+
+Quizzes are based on the reading for the class period in which the quiz is
+taken, or before.
+
+We will have three exams in this course. Each exam will be 15% of the
+grade.  See the schedule for the dates of the exams.
 
 ### Homework
 
@@ -141,13 +150,8 @@ solve these problems in the end, for job interviews and such ...
 
 ### Project
 
-Groups will be assigned. All written deliverables are expected to be submitted
-in PDF format.
-
-###  Exams: 
-
-We will have three exams in this course. Each exam will be 15% of the
-grade.
+Groups will be assigned. See  
+[Project]({{ site.baseurl }}/project.md) for more details
 
 ### Attendance
 
@@ -246,11 +250,11 @@ Please note that Dr. Fasy is a mandatory reporter per the Cleary Act.
 
 ## Course Textbook
 
-* (Required) [Algorithms by Jeff Erickson](https://jeffe.cs.illinois.edu/teaching/algorithms/)
+* (Required) [Algorithms by Jeff Erickson](https://jeffe.cs.illinois.edu/teaching/algorithms/), abbreviated JE
 * (Suggested) Introduction to Algorithms, Third Edition by Cormen, Leiserson, Rivest, and
-  Stein (CLRS). 
+  Stein, abbreviated CLRS. 
 * (Suggested) [Building Blocks for TCS](https://mfleck.cs.illinois.edu/building-blocks/index-sp2020.html)
-  by Fleck for a refresher on 200-level course material.
+  by Fleck for a refresher on 200-level course material, abbreviated MMF.
 
 ## Use of Materials
 
