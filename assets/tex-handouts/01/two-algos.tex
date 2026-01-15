@@ -55,11 +55,9 @@ and a query $q$ (a real number).
 
         \WHILE{$left < right$}
             \STATE $mid \gets \ceil{\frac{left + right}{2}}$
-            \IF {q=L(i)}
-                \STATE $found \gets$ TRUE
-            \ENDIF
             \IF{L[mid]=q}
                 \STATE $found \gets$ TRUE
+                \STATE $left \gets right +1$
             \ELSIF{$L[mid]<q$}
                 \STATE $left \gets mid+1$
             \ELSE
