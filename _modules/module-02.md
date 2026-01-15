@@ -23,5 +23,5 @@ title: Recursion
 : **Quiz**{: .label .label-darkorchid}Prerequisite-Assessment (20 minutes)
 
 12 Feb
-: QuickSelect [[notes]({{ site.baseurl }}/assets/pdfs/02-12_notes.pdf)]
+: QuickSelect [[notes]({{ site.baseurl }}/assets/pdfs/02-12t_notes.pdf)]
 : **HW 2 due**{: .label .label-red }
