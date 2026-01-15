@@ -2,6 +2,11 @@
 title: Backtracking & Dynamic Programming
 ---
 
+17 Feb
+
+19 Feb
+: **Exam 1**{: .label .label-purple }
+
 29 Sept
 : [Backtracking and Game Trees](https://msu.github.io/csci-432-fall2023/assets/pdfs/09-29_notes.pdf)
    : [JE Ch.2](https://jeffe.cs.illinois.edu/teaching/algorithms/book/01-backtracking.pdf) 
