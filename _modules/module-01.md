@@ -8,7 +8,7 @@ title: Introduction to Algorithms and Fundamentals Review
 15 Jan
 : Induction [[H0-2]({{ site.baseurl }}/assets/pdfs/HO-02_horses.pdf)] [[notes]({{ site.baseurl }}/assets/pdfs/01-15_notes.pdf)] 
   : [MMF Ch.11](https://mfleck.cs.illinois.edu/building-blocks/index-sp2020.html)
-: Quiz{: .label .label-darkorchid}Prerequisite-Assessment (20 minutes)
+: **Quiz**{: .label .label-darkorchid}Prerequisite-Assessment (20 minutes)
 
 20 Jan
 : Runtime Analysis [[H0-3]({{ site.baseurl }}/assets/pdfs/HO-03_asymptotics.pdf)] [[notes]({{ site.baseurl }}/assets/pdfs/01-20_notes.pdf)]
