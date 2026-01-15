@@ -4,7 +4,6 @@ title: Recursion
 
 1 Sept
 : [Basic Analysis of Algorithms](https://msu.github.io/csci-432-fall2023/assets/pdfs/09-01_notes.pdf)
-  : [MMF Ch.15](https://mfleck.cs.illinois.edu/building-blocks/updates-fa2017/algorithms.pdf), [JE Ch.0](https://jeffe.cs.illinois.edu/teaching/algorithms/book/00-intro.pdf) 
 : **HW 0 due**{: .label .label-red }
 
 4 Sept
