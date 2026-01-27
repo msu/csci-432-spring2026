@@ -1,0 +1,97 @@
+\documentclass{article}
+
+\usepackage{../handouts}
+
+\title{CSCI 432 Handout 04: Recurrence Relations}
+\author{Name: \rule{3in}{0.15mm} \\~\\
+    Collaborators: \rule{3in}{0.15mm} }
+\date{27 January 2026}
+
+\begin{document}
+\maketitle
+
+\section*{Recall a Couple Common Summations}
+
+There are a couple summations that we see over and over again in algorithms.
+Let's see which you remember.  Please fill out the following table, where all
+functions are of the form $f_i \colon \N \to \R$, and $c \in \R$ is a constant.
+
+\begin{table}[h!]
+    \begin{tabular}{p{0.75in} p{1.25in} p{2in} p{2in}}
+        \toprule
+        Name & Summation    & Closed Form & Asymptotic Form \\
+        \midrule
+        Arithmetic Series   & $f_1(n) = \sum_{i=0}^n c$ \vspace{.9in} & & \\
+        Constant Summation  & $f_2(n) = \sum_{i=0}^n i$ \vspace{.9in} & & \\
+        Sum of Squares  & $f_3(n) = \sum_{i=1}^n i^2$ \vspace{.9in} & & \\
+        Finite Geom.\ Series & $f_4(n) = \sum_{i=0}^n c r^i$ \vspace{.9in} &
+            $f_4(n) = \begin{cases}
+                c\frac{1-r^{n+1}}{1-r} & r \neq 1 \\
+                ? & r = 1
+                    \end{cases}$                         & \\
+        Harmonic Series  & $f_5(n) = \sum_{i=1}^n \frac{1}{i}$ \vspace{.9in} &
+            (no nice closed form) & \\
+        \bottomrule
+    \end{tabular}
+\end{table}
+
+\FloatBarrier
+\section*{Summations and Recursions}
+
+Now, let's write each of the summations above as a recursion by `plucking off'
+the first term.  For example,
+
+$$ f_1(n) = \begin{cases}
+                c & n=1 \\
+                c + f_1(n-1) & otw
+            \end{cases}
+$$
+
+\begin{enumerate}
+    \item $f_2(n) = $
+        \vspace{1in}
+    \item $f_3(n) = $
+        \vspace{1in}
+    \item $f_4(n) = $
+        \vspace{1in}
+    \item $f_5(n) = $
+        \vspace{1in}
+\end{enumerate}
+
+Being able to do this is helpful for:
+\begin{itemize}
+    \item In the inductive step of a proof by induction.
+    \item To walk through algorithms.
+\end{itemize}
+
+
+\section*{Recursion}
+
+For each of the recursions below, name an algorithm that uses that recursion, and
+give the asymptotic form of the recurrence relation.
+
+\begin{enumerate}
+    \item $T(n) = 2 T(n/2) + \Theta(n)$\\
+        \answer
+    \item $T(n) = T(n/2) + \Theta(1)$\\
+        \answer
+    \item $T(n) = T(n-1) + \Theta(1)$\\
+        \answer
+    \item $T(n) = T(n-1) + \Theta(n)$\\
+        \answer
+    \item $T(n) = 2T(n-1) + \Theta(1)$\\
+        \answer
+    \item $T(n) = T(n-1) + T(n-2) + \Theta(1)$\\
+        \answer
+\end{enumerate}
+
+We often dived the problem in half.  What happens in the following two
+recursions if we divide the problem into thirds?
+\begin{enumerate}
+    \item $T(n) = 3 T(n/3) + \Theta(n)$\\
+        \answer
+    \item $T(n) = T(n/3) + \Theta(1)$\\
+        \answer
+\end{enumerate}
+
+\end{document}

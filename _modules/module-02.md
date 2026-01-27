@@ -3,7 +3,7 @@ title: Recursion
 ---
 
 27 Jan
-: Recurrence Relations [[notes]({{ site.baseurl }}/assets/pdfs/01-27_notes.pdf)]
+: Recurrence Relations [[H0-1]({{ site.baseurl }}/assets/pdfs/HO-04_recur-relations.pdf)] [[notes]({{ site.baseurl }}/assets/pdfs/01-27_notes.pdf)]
   : [JE Append. II](https://jeffe.cs.illinois.edu/teaching/algorithms/book/99-recurrences.pdf) 
 : **Quiz**{: .label .label-darkorchid}Prerequisite-Assessment (20 minutes)
 
