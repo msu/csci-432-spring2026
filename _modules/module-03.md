@@ -7,6 +7,28 @@ title: Backtracking & Dynamic Programming
 19 Feb
 : **Exam 1**{: .label .label-purple }
 
+24 Feb
+: **Quiz**{: .label .label-darkorchid}Prerequisite-Assessment (20 minutes)
+
+26 Feb
+: **HW 3 due**{: .label .label-red }
+
+3 Mar
+
+5 Mar
+
+10 Mar
+: **Quiz**{: .label .label-darkorchid}Prerequisite-Assessment (20 minutes)
+
+12 Mar
+: **HW 4 due**{: .label .label-red }
+
+17 Mar
+: **Spring Break**{: .label .label-green }
+
+19 Mar
+: **Spring Break**{: .label .label-green }
+
 29 Sept
 : [Backtracking and Game Trees](https://msu.github.io/csci-432-fall2023/assets/pdfs/09-29_notes.pdf)
    : [JE Ch.2](https://jeffe.cs.illinois.edu/teaching/algorithms/book/01-backtracking.pdf) 
