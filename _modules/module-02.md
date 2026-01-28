@@ -19,9 +19,9 @@ title: Recursion
 : Master Method [[notes]({{ site.baseurl }}/assets/pdfs/02-05_notes.pdf)][[HO-5]({{ site.baseurl }}/assets/pdfs/09-13_master-theorem.pdf)]
 
 10 Feb
-: QuickSort [[notes]({{ site.baseurl }}/assets/pdfs/02-10_notes.pdf)]
+: QuickSort and QuickSelect [[notes]({{ site.baseurl }}/assets/pdfs/02-10_notes.pdf)]
 : **Quiz**{: .label .label-darkorchid} (10-15 minutes)
 
 12 Feb
-: QuickSelect [[notes]({{ site.baseurl }}/assets/pdfs/02-12_notes.pdf)]
+: Termination and Decrementing Functions [[notes]({{ site.baseurl }}/assets/pdfs/02-12_notes.pdf)]
 : **HW 2 due**{: .label .label-red }
