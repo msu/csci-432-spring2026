@@ -3,39 +3,37 @@ title: Backtracking & Dynamic Programming
 ---
 
 17 Feb
+: [Backtracking and Game Trees]({{ site.baseurl }}/assets/pdfs/02-17_notes.pdf)
 
 19 Feb
 : **Exam 1**{: .label .label-purple }
 
-29 Sept
-: [Backtracking and Game Trees](https://msu.github.io/csci-432-fall2023/assets/pdfs/09-29_notes.pdf)
+24 Feb
+: Backtracking II [[notes]({{ site.baseurl }}/assets/pdfs/02-24_notes.pdf)]
    : [JE Ch.2](https://jeffe.cs.illinois.edu/teaching/algorithms/book/01-backtracking.pdf) 
+: **Quiz**{: .label .label-darkorchid}Prerequisite-Assessment (20 minutes)
 
-2 Oct
-: [Termination and Decrementing Functions](https://msu.github.io/csci-432-fall2023/assets/pdfs/10-02_notes.pdf)
+26 Feb
+: Loop Invariants [[notes]({{ site.baseurl }}/assets/pdfs/02-26_notes.pdf)]
+: **HW 3 due**{: .label .label-red }
 
-4 Oct
-: [Loop Invariants](https://msu.github.io/csci-432-fall2023/assets/pdfs/10-04_notes.pdf)
-
-6 Oct
-: [Backtracking II](https://msu.github.io/csci-432-fall2023/assets/pdfs/10-06_notes.pdf)
-
-9 Oct
-: [Introduction to Dynamic Programming](https://msu.github.io/csci-432-fall2023/assets/pdfs/10-09_notes.pdf)
+3 Mar
+: Dynamic Programming [[notes]({{ site.baseurl }}/assets/pdfs/03-03_notes.pdf)]
    : [JE Ch.3](https://jeffe.cs.illinois.edu/teaching/algorithms/book/01-recursion.pdf) 
 
+5 Mar
+: DP II [[notes]({{ site.baseurl }}/assets/pdfs/03-05_notes.pdf)]
 
-11 Oct
-:
-: **HW 2 due**{: .label .label-red }
+10 Mar
+: Topological Sort [[notes]({{ site.baseurl }}/assets/pdfs/03-10_notes.pdf)]
+: **Quiz**{: .label .label-darkorchid}Prerequisite-Assessment (20 minutes)
 
-13 Oct
-:
+12 Mar
+: Topological Sort II [[notes]({{ site.baseurl }}/assets/pdfs/03-12_notes.pdf)]
+: **HW 4 due**{: .label .label-red }
 
-23 Oct
+17 Mar
+: **Spring Break**{: .label .label-green }
 
-25 Oct
-: Topological Sort I 
-
-27 Oct
-: [Topological Sort II](https://msu.github.io/csci-432-fall2023/assets/pdfs/10-27_notes.pdf)
+19 Mar
+: **Spring Break**{: .label .label-green }

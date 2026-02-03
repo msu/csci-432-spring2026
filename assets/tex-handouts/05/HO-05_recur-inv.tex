@@ -1,0 +1,123 @@
+\documentclass{article}
+
+\usepackage{../handouts}
+
+\title{CSCI 432 Handout 05: Recursion Invariants}
+\author{Name: \rule{3in}{0.15mm} \\~\\
+    Collaborators: \rule{3in}{0.15mm} }
+\date{3 February 2026}
+
+\begin{document}
+\maketitle
+
+\section*{Recursion Invariants: Proving Partial Correctness}
+
+Recall the\textsc{Hanoi} algorithm (given in \algref{hanoi});
+see~\cite[Ch.~1]{textbook}.
+In this problem, have three towers, each with a set of discs on them. The
+stacking rule is that all discs are a unique size, all disks are stacked on
+towers, and no smaller disc is underneath a larger one.
+
+\begin{algorithm}[h!]
+    \caption{$\textsc{Hanoi}(n,src,dest,tmp)$}\label{alg:hanoi}
+    \begin{algorithmic}[1]
+        \REQUIRE $n \in \N$, and three towers with disks: $src,dest,tmp$
+        such that [[See Q1 below]].
+        \ENSURE [[See Q2 below]].
+        %
+        \IF{ $n>0$ }\label{algln:certificate:ifdirs}
+            \STATE $\textsc{Hanoi}(n-1,src,tmp,dest)$
+            \STATE move top disk from $src$ to $dest$
+            \STATE $\textsc{Hanoi}(n-1,tmp,dest,src)$
+        \ENDIF
+    \end{algorithmic}
+\end{algorithm}
+
+\begin{enumerate}
+    \item Suppose we have $n$ disks total. What are the assumptions on the input
+        to the initial call $\textsc{Hanoi}(n,src,dest,tmp)$?
+
+        \answer
+
+        Going forward, we will call these assumptions $P$ (for the
+        preconditions).
+
+    \pagebreak
+    \item What does it mean for $\textsc{Hanoi}(n,src,dest,tmp)$ to execute
+        correctly? What does it return / what does it need to accomplish?
+
+        \answer
+
+        Going forward, we call this statement $Q$ (for postcondition; the letter
+        $P$ was already taken).
+
+    \item For a general call to the recursive algorithm what are the assumptions on the input
+        (For convenience, suppose the call is: $\textsc{Hanoi}(k,A,B,C)$).
+
+        \answer
+
+        Note: when making a recursive call, we must justify that we have met
+        these conditions.
+
+    \item What is the recursion invariant?
+
+        The recursion invariant $R$ is statement (i.e., a sentence that can be
+        evaluated to TRUE/FALSE).
+        In particular, $R$ is (in general) the statement,
+        \emph{Each recursive call $\textsc{Hanoi}(k,A,B,C)$ executes
+        correctly and gets us closer to the end result}.
+        What does that mean in our case?  Well, it means
+        \begin{itemize}
+            \item There are currently no violations of smaller disks on larger
+                disks. (Note: the world would crumble if this were violated at
+                any time), AND
+            \item the $k$ smallest disks are now on $B$, AND
+            \item no other disks besides the $k$ smallest have moved (since
+                we made this call).
+        \end{itemize}
+
+        We use the recursion invariant to prove INITIALIZATION, MAINTENANCE, and
+        END.  So, sometimes we may see the invariant right away.  Other times,
+        we may need to try the proofs then revisit the invariant (as we might
+        realize that we forgot something).
+
+    \pagebreak
+    \item INITIALIZATION This is like the base case of induction.  Colloquially,
+        we ask ``Why is this
+        true for the smallest input?'' (And, what are those inputs that
+        would allow us to return without a recursive call?)  More formally, we
+        can say: If $n_0=0$, then after the call to
+        $\textsc{Hanoi}(n_0,A,B,C)$, the recursion invariant $R$ is satisfied.
+
+        \answer
+
+        Note: sometimes, just as in induction, there may be more than one base case.
+
+    \item MAINTENANCE: This part is JUST like the inductive step of induction.
+        Let $k \in \N$ such that $k \geq n_0$.  Assume that, for all $k'\in \N$ such that
+        $n_0 \leq k' \leq k$, the recursion invariant $R$ holds after a call to
+        $\textsc{Hanoi}(k',*,*,*)$. (That was the equivalent to the inductive
+        assumption).  Now, we must prove that $R$ holds after
+        $\textsc{Hanoi}(k+1,A,B,C)$. (Hint: for this, we will almost always need
+        to use the line numbers as we walk
+        through the algorithm to explain how the maintenance step works).
+
+        \answer
+
+    \item END: This is where we diverge from induction.  Because algorithms are
+        finite, we can't go on forever. Colloquially, we say ``if the initial call
+        $\textsc{Hanoi}(n,src,dest,tmp)$ finishes executing, then all $n$ disks
+        (which were initially on $src$) have moved to $dst$.'' More formally, we
+        can phrase this as: If the recursion invariant holds, if the
+        preconditions $P$ are satisfied, and if the algorithm
+        completes execution, then the post-condition $Q$ is satisfied.
+        (For shorthand, I might write $R \wedge P \wedge T \implies Q$ ).
+
+        \answer
+
+\end{enumerate}
+
+\bibliographystyle{acm}
+\bibliography{biblio}
+
+\end{document}

@@ -134,11 +134,16 @@ grade.  See the schedule for the dates of the exams.
 
 ### Homework
 
-Each class period includes suggested reading and additional problems. The
+Each class period includes suggested reading and sometimes additional problems. The
 homework is a reflection of the effort that you put into working on the problems
 that appear in the reading, as well as any additional problems posted. Homework
 must be typeset in LaTex using the provided template.  The first and last
 homework have a slightly different format than the rest.
+
+Specifically, the homework problems you are expected to be working on are:
+
+1. All odd-numbered problems in the assigned readings.
+2. Any in-class problems not completed during class.
 
 When working on homework problems, it is highly suggested that you do not search
 for answers (either on Google or on ChatGPT or any other means).  You have the
