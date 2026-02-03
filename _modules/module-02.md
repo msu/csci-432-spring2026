@@ -13,7 +13,7 @@ title: Recursion
 : **HW 1 due**{: .label .label-red }
 
 3 Feb
-: Recursion Invariants [[notes]({{ site.baseurl }}/assets/pdfs/02-03_notes.pdf)][[H0-4]({{ site.baseurl }}/assets/pdfs/02-03_recur-inv.pdf)]
+: Recursion Invariants [[notes]({{ site.baseurl }}/assets/pdfs/02-03_notes.pdf)][[H0-4]({{ site.baseurl }}/assets/pdfs/HO-05_recur-inv.pdf)]
 
 5 Feb
 : Master Method [[notes]({{ site.baseurl }}/assets/pdfs/02-05_notes.pdf)][[HO-5]({{ site.baseurl }}/assets/pdfs/09-13_master-theorem.pdf)]
