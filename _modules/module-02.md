@@ -16,7 +16,7 @@ title: Recursion
 : Recursion Invariants [[notes]({{ site.baseurl }}/assets/pdfs/02-03_notes.pdf)][[H0-5]({{ site.baseurl }}/assets/pdfs/HO-05_recur-inv.pdf)]
 
 5 Feb
-: Master Method [[notes]({{ site.baseurl }}/assets/pdfs/02-05_notes.pdf)][[HO-6]({{ site.baseurl }}/assets/pdfs/HO-06_master-theorem.pdf)]
+: Master Method [[HO-6]({{ site.baseurl }}/assets/pdfs/HO-06_master-theorem.pdf)][[notes]({{ site.baseurl }}/assets/pdfs/02-05_notes.pdf)]
 
 10 Feb
 : QuickSort and QuickSelect [[notes]({{ site.baseurl }}/assets/pdfs/02-10_notes.pdf)]
