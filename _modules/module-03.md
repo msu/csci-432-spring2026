@@ -3,7 +3,7 @@ title: Backtracking & Dynamic Programming
 ---
 
 17 Feb
-: Termination and Decrementing Functions [[notes]({{ site.baseurl }}/assets/pdfs/02-17_notes.pdf)]
+: Termination and Decrementing Functions [[HO-7]({{ site.baseurl }}/assets/pdfs/HO-07_decrementing.pdf)][[notes]({{ site.baseurl }}/assets/pdfs/02-17_notes.pdf)]
 
 19 Feb
 : **Exam 1**{: .label .label-purple }
