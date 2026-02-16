@@ -10,7 +10,7 @@ title: Greedy Algorithms
 
 31 March
 : TBD
-: **Quiz**{: .label .label-darkorchid}Prerequisite-Assessment (20 minutes)
+: **Quiz**{: .label .label-darkorchid}
 
 2 April
 : TBD

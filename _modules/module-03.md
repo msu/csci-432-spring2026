@@ -11,7 +11,7 @@ title: Backtracking & Dynamic Programming
 24 Feb
 : Backtracking and Game Trees [[notes]({{ site.baseurl }}/assets/pdfs/02-24_notes.pdf)]
    : [JE Ch.2](https://jeffe.cs.illinois.edu/teaching/algorithms/book/01-backtracking.pdf) 
-: **Quiz**{: .label .label-darkorchid}Prerequisite-Assessment (20 minutes)
+: **Quiz**{: .label .label-darkorchid}
 
 26 Feb
 : Loop Invariants [[notes]({{ site.baseurl }}/assets/pdfs/02-26_notes.pdf)]
@@ -26,7 +26,7 @@ title: Backtracking & Dynamic Programming
 
 10 Mar
 : Topological Sort [[notes]({{ site.baseurl }}/assets/pdfs/03-10_notes.pdf)]
-: **Quiz**{: .label .label-darkorchid}Prerequisite-Assessment (20 minutes)
+: **Quiz**{: .label .label-darkorchid}
 
 12 Mar
 : Topological Sort II [[notes]({{ site.baseurl }}/assets/pdfs/03-12_notes.pdf)]
