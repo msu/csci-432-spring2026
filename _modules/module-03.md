@@ -3,13 +3,13 @@ title: Backtracking & Dynamic Programming
 ---
 
 17 Feb
-: [Backtracking and Game Trees]({{ site.baseurl }}/assets/pdfs/02-17_notes.pdf)
+: Termination and Decrementing Functions [[notes]({{ site.baseurl }}/assets/pdfs/02-17_notes.pdf)]
 
 19 Feb
 : **Exam 1**{: .label .label-purple }
 
 24 Feb
-: Backtracking II [[notes]({{ site.baseurl }}/assets/pdfs/02-24_notes.pdf)]
+: Backtracking and Game Trees [[notes]({{ site.baseurl }}/assets/pdfs/02-24_notes.pdf)]
    : [JE Ch.2](https://jeffe.cs.illinois.edu/teaching/algorithms/book/01-backtracking.pdf) 
 : **Quiz**{: .label .label-darkorchid}Prerequisite-Assessment (20 minutes)
 
