@@ -10,9 +10,11 @@ title: Advanced Graph Algorithms
 
 14 April
 : Graph Algorithms [[notes]({{ site.baseurl }}/assets/pdfs/04-14_notes.pdf)]
+: **Quiz**{: .label .label-darkorchid}
 
 16 April
 : Graph Algorithms II [[notes]({{ site.baseurl }}/assets/pdfs/04-16_notes.pdf)]
+: **HW 6 due**{: .label .label-red }
 
 21 April
 : **Project Presentations**{: .label .label-red }
