@@ -14,7 +14,7 @@ title: Backtracking & Dynamic Programming
 : **Quiz**{: .label .label-darkorchid}
 
 26 Feb
-: Loop Invariants [[notes]({{ site.baseurl }}/assets/pdfs/02-26_notes.pdf)]
+: Optimal Binary Search [[notes]({{ site.baseurl }}/assets/pdfs/02-26_notes.pdf)]
 : **HW 3 due**{: .label .label-red }
 
 3 Mar
@@ -22,7 +22,7 @@ title: Backtracking & Dynamic Programming
    : [JE Ch.3](https://jeffe.cs.illinois.edu/teaching/algorithms/book/01-recursion.pdf) 
 
 5 Mar
-: DP II [[notes]({{ site.baseurl }}/assets/pdfs/03-05_notes.pdf)]
+: Loop Invariants [[notes]({{ site.baseurl }}/assets/pdfs/03-05_notes.pdf)]
 
 10 Mar
 : Topological Sort [[notes]({{ site.baseurl }}/assets/pdfs/03-10_notes.pdf)]
