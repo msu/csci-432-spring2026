@@ -10,7 +10,7 @@ title: Backtracking & Dynamic Programming
 
 24 Feb
 : Backtracking and Game Trees [[notes]({{ site.baseurl }}/assets/pdfs/02-24_notes.pdf)]
-   : [JE Ch.2](https://jeffe.cs.illinois.edu/teaching/algorithms/book/01-backtracking.pdf) 
+   : [JE Ch.2](https://jeffe.cs.illinois.edu/teaching/algorithms/book/02-backtracking.pdf) 
 : **Quiz**{: .label .label-darkorchid}
 
 26 Feb
@@ -19,7 +19,7 @@ title: Backtracking & Dynamic Programming
 
 3 Mar
 : Dynamic Programming [[notes]({{ site.baseurl }}/assets/pdfs/03-03_notes.pdf)]
-   : [JE Ch.3](https://jeffe.cs.illinois.edu/teaching/algorithms/book/01-recursion.pdf) 
+   : [JE Ch.3](https://jeffe.cs.illinois.edu/teaching/algorithms/book/03-dynprog.pdf) 
 
 5 Mar
 : Loop Invariants [[notes]({{ site.baseurl }}/assets/pdfs/03-05_notes.pdf)]
