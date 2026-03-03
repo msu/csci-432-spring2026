@@ -18,7 +18,7 @@ title: Backtracking & Dynamic Programming
 : **HW 3 due**{: .label .label-red }
 
 3 Mar
-: Dynamic Programming [[notes]({{ site.baseurl }}/assets/pdfs/03-03_notes.pdf)]
+: Dynamic Programming [[HO-8]({{ site.baseurl }}/assets/pdfs/HO-08_dp.pdf)][[notes]({{ site.baseurl }}/assets/pdfs/03-03_notes.pdf)]
    : [JE Ch.3](https://jeffe.cs.illinois.edu/teaching/algorithms/book/03-dynprog.pdf) 
 
 5 Mar

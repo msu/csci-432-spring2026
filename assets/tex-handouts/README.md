@@ -9,3 +9,4 @@ List of handouts:
 * 2/3 HO-05 recursion invariants
 * 2/5 HO-06 master theorem
 * 2/16 HO-07 Decrementing Functions
+* 3/3 HO-08 Dynamic Programming

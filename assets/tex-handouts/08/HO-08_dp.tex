@@ -1,0 +1,75 @@
+\documentclass{article}
+
+\usepackage{../handouts}
+
+\title{CSCI 432 Handout 08: Dynamic Programming}
+\author{Name: \rule{3in}{0.15mm} \\~\\
+    Collaborators: \rule{3in}{0.15mm} }
+\date{17 February 2026}
+
+
+
+\begin{document}
+\maketitle
+
+\noindent
+\section*{The Problem}
+
+Suppose we are given a set $L$ of $n$ line segments in the plane, where each
+segment has one endpoint on the line $y=0$ and one endpoint on the line $y=1$,
+and all $2n$ endpoints are distinct. Describe and analyze an algorithm to
+compute the largest subset of $L$ in which no pair of segments intersects.
+
+From JE, Chapter 3, Problem 19 (a).
+
+\section*{Practice}
+
+\begin{enumerate}
+    \item Before getting started, let's consider an example.  What would the desired output be
+        for the following input set?
+        \begin{center}
+            \includegraphics{lines}
+        \end{center}
+    ~\practice
+
+    \newpage
+
+    \item {\bf Formulate the problem recursively: Specification}. The first step
+        in thinking of a dynamic program is to formulate the problem
+        recursively. Before even doing that, write down precisely WHAT problem
+        you are solving.  Namely, what is the input, the output, and the
+        relationship between them?
+        \practice
+
+    \item {\bf Formulate the problem recursively: Solution}. Provide a clear
+        recursive formula that solves this problem.
+        \practice
+
+    \item {\bf Build solution: Identify the subproblems}. What are all of the
+        different subproblems that your recursive formula would require solving
+        as intermediate steps? Be sure to include the initial input as one of
+        those subproblems!
+    \practice
+
+    \item {\bf Build solution: Choose a memoization data structure.} What data
+        structure can store EVERY subproblem that you identified?
+    \practice
+
+    \item {\bf Build solution: identify dependencies}. Draw the dependency
+        graph among your subproblems.
+    \practice
+
+    \item {\bf Build solution: find a good evaluation order}. Keeping your
+        dependency graph in mind, select a good evaluation order so that by the
+        time you need a subproblem, it is already computed.
+    \practice
+
+    \item {\bf Build solution: analyze space and running time}. What are the
+        space and worst-case time complexities of your algorithm?
+    \practice
+
+    \item {\bf Write down the algorithm}. Give pseudocode!
+    \practice
+\end{enumerate}
+
+\end{document}
