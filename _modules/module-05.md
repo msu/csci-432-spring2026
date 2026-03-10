@@ -4,13 +4,12 @@ title: Advanced Graph Algorithms
 
 31 March
 : WFS [[notes]({{ site.baseurl }}/assets/pdfs/04-07_notes.pdf)]
-   : [JE Ch.5](https://jeffe.cs.illinois.edu/teaching/algorithms/book/05-graphs.pdf) 
-     [JE Ch.6](https://jeffe.cs.illinois.edu/teaching/algorithms/book/06-dfs.pdf) 
+   : [JE Ch.6](https://jeffe.cs.illinois.edu/teaching/algorithms/book/06-dfs.pdf) 
 : **Quiz**{: .label .label-darkorchid}
 
 2 April
 : Minimum Spanning Trees 
-     [JE Ch.7](https://jeffe.cs.illinois.edu/teaching/algorithms/book/06-dfs.pdf) 
+   : [JE Ch.7](https://jeffe.cs.illinois.edu/teaching/algorithms/book/06-dfs.pdf) 
 : **HW 5 due**{: .label .label-red }
 
 7 April
