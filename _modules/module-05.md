@@ -2,11 +2,22 @@
 title: Advanced Graph Algorithms
 ---
 
-7 April
+31 March
 : WFS [[notes]({{ site.baseurl }}/assets/pdfs/04-07_notes.pdf)]
+   : [JE Ch.5](https://jeffe.cs.illinois.edu/teaching/algorithms/book/05-graphs.pdf) 
+     [JE Ch.6](https://jeffe.cs.illinois.edu/teaching/algorithms/book/06-dfs.pdf) 
+: **Quiz**{: .label .label-darkorchid}
+
+2 April
+: Minimum Spanning Trees 
+     [JE Ch.7](https://jeffe.cs.illinois.edu/teaching/algorithms/book/06-dfs.pdf) 
+: **HW 5 due**{: .label .label-red }
+
+7 April
+: TBD
 
 9 April
-: **Exam 2**{: .label .label-purple }
+: **Exam 2**{: .label .label-purple } (focus on DP & Greedy Algorithms)
 
 14 April
 : Graph Algorithms [[notes]({{ site.baseurl }}/assets/pdfs/04-14_notes.pdf)]

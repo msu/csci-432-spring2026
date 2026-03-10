@@ -22,15 +22,15 @@ title: Backtracking & Dynamic Programming
    : [JE Ch.3](https://jeffe.cs.illinois.edu/teaching/algorithms/book/03-dynprog.pdf) 
 
 5 Mar
-: Loop Invariants [[HO-9]({{ site.baseurl }}/assets/pdfs/HO-09_algo-analysis.pdf)][[notes]({{ site.baseurl }}/assets/pdfs/03-05_notes.pdf)]
+: Analyzing Algorithms, Closest Pair [[HO-9]({{ site.baseurl }}/assets/pdfs/HO-09_algo-analysis.pdf)][[notes]({{ site.baseurl }}/assets/pdfs/03-05_notes.pdf)]
    : CLRS 33.4, [MIT notes](https://ocw.mit.edu/courses/6-046j-design-and-analysis-of-algorithms-spring-2012/90bf712a64648a7d40387df4c22efa2a_MIT6_046JS12_lec23.pdf) 
 
 10 Mar
-: Topological Sort [[notes]({{ site.baseurl }}/assets/pdfs/03-10_notes.pdf)]
+: Recap (Ch 3, Prob. 19; closest pair), Loop Invariants [[notes]({{ site.baseurl }}/assets/pdfs/03-10_notes.pdf)]
 : **Quiz**{: .label .label-darkorchid}
 
 12 Mar
-: Topological Sort II [[notes]({{ site.baseurl }}/assets/pdfs/03-12_notes.pdf)]
+: Topological Sort [[notes]({{ site.baseurl }}/assets/pdfs/03-12_notes.pdf)]
 : **HW 4 due**{: .label .label-red }
 
 17 Mar
