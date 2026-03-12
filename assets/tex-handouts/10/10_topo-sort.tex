@@ -1,0 +1,168 @@
+\documentclass{article}
+
+\usepackage{../handouts}
+
+\title{CSCI 432 Handout 10: Topological Sort}
+\author{Name: \rule{3in}{0.15mm}}
+
+\begin{document}
+\maketitle
+
+\section*{Topological Sort: The Algorithm}
+
+Topological sort takes a poset $(P,\leq)$ and returns a total order of all
+objects that is \emph{compatible} with the partial order of the poset.  By
+compatible, we mean that for all $a \leq b \in P$, we have $a$ appears before
+$b$ in the total order.  For example, consider $P$ to be a set of points in
+$\R^2$ and let the partial order be the product order; that is, $(a_x,a_y) \leq
+(b_x,b_y)$ if and only if $a_x \leq b_x$ and $a_y \leq b_y$.  Given a set:
+$$ P = \{ (0,0), (\pi, \pi), (2,4), (1,2) \}$$
+we can return the following total order:
+$$P = [ (0,0), (1,2), (2,4), (\pi, \pi)].$$
+Note that this is not the only compatible total order.
+
+\begin{enumerate}
+    \item What other total order
+        could have been returned?
+
+    \textbf{Answer}
+    \vspace{1in}
+
+    \item Another order we can impose on $\R^2$ is the lexicographical ordering (sometimes
+        called the dictionary ordering), where
+        $(a_x,a_y) \leq (b_x,b_y)$ if and only if $a_x < a_y$ or ($a_x=a_y$ and $a_y
+        \leq b_y$).  What total orders on $P$ exist that are compatible with the
+        lexicographical ordering?
+
+    \textbf{Answer}
+\end{enumerate}
+
+\newpage
+The following algorithm takes as input a poset, represented as a directed
+acyclic graph, and returns a compatible total order.  If the poset orders $a
+\leq b$, then the DAG has an edge from vertex $a$ to vertex $b$.  For this
+algorithm, vertices have at least one attribute: outgoing, which stores a list
+of vertices that define the outgoing edges.
+
+\begin{algorithm}[h]
+    \caption{Topological Sort}
+    %
+    \begin{algorithmic}[1]
+        \REQUIRE $G=(V,E)$, a DAG
+
+        \ENSURE $L$, a list of vertices in G in a total order compatible with
+        the partial order of the DAG.
+
+        \FOR {$v \in V$}
+            \STATE Add an attribute `$v$.count' and initialize it to the indegree of $v$.
+        \ENDFOR
+
+        \STATE $Q \gets$ queue containing the vertices with `count'=0.\label{ln:initQ}
+
+        \STATE $L \gets$ array of length $|V|$
+        \STATE $i \gets 1$
+
+        \WHILE {$Q$ is not empty}
+            \STATE $v \gets Q.\textsc{POP}$
+            \STATE $L[i] \gets v$
+            \STATE $i++$
+            \FOR {$u \in v$.outgoing}
+                \STATE $u$.count$--$
+                \IF {$u$.count $=0$}
+                    \STATE Add $u$ to $Q$
+                \ENDIF
+            \ENDFOR
+        \ENDWHILE
+
+        \RETURN $L$
+    \end{algorithmic}
+\end{algorithm}
+
+\pagebreak
+
+\begin{enumerate}\setcounter{enumi}{2}
+
+    \item In Line~\ref{ln:initQ}, why is $Q$ not empty?
+
+        \textbf{Answer}
+        \vspace{1in}
+
+    \item   Explain how topological sort is helpful for dynamic programming.
+
+        \textbf{Answer}
+        \vspace{1in}
+
+    \item Walk through a small example.
+
+        \textbf{Answer}
+\end{enumerate}
+
+\pagebreak
+\section*{Topological Sort: The Decrementing Function}
+
+Recall from HO-07 that a decrementing function is a function $D \colon
+\mathcal{S} \to \N$, where $\mathcal{S}$ is the state space that
+such that (when there is no recursion) each time a loop is re-entered, the function is strictly less than
+the last time it entered that loop.
+
+
+\begin{enumerate}\setcounter{enumi}{5}
+    \item What is the decrementing function for the for loop?
+
+    \textbf{Answer}
+    \vspace{1in}
+
+    \item What is the decrementing function for the while loop?
+
+    \textbf{Answer}
+    \vspace{1in}
+\end{enumerate}
+
+\newpage
+\section*{Topological Sort: The Loop Invariant}
+
+Next, we investigate partial correctness of the while loop.  For this loop, what
+are the following statements (start with your best guess, then come back and
+revise if needed):
+
+The loop guard $G$:
+\vspace{1.5in}
+
+The post-condition $Q$:
+\vspace{1.5in}
+
+The pre-condition $P$:
+\vspace{1.5in}
+
+The loop invariant $L=L_i$:
+\vspace{1.5in}
+
+\newpage
+Can you use this loop invariant
+to prove partial correctness.
+
+\begin{enumerate}\setcounter{enumi}{7}
+    \item Initialization: If the preconditions are met and if we enter the loop, then the
+    loop invariant is correct. ($P \wedge G \implies L$).
+
+    \textbf{Answer}
+    \vspace{2in}
+
+
+    \item Maintenance: If we entered the loop and the loop invariant held, then when we
+    exit the loop, the loop invariant will still hold: ($G \wedge L_i \implies
+    L_{i+1})$.
+
+    \textbf{Answer}
+    \vspace{2in}
+
+
+    \item End: If the loop ends and the loop invariant was correct, then the algorithm is
+    correct. ($L \wedge \neg G \implies Q$).
+
+
+    \textbf{Answer}
+    \vspace{2in}
+\end{enumerate}
+
+\end{document}

@@ -30,7 +30,7 @@ title: Backtracking & Dynamic Programming
 : **Quiz**{: .label .label-darkorchid}
 
 12 Mar
-: Topological Sort [[notes]({{ site.baseurl }}/assets/pdfs/03-12_notes.pdf)]
+: Topological Sort [[HO-10]({{ site.baseurl }}/assets/pdfs/HO-10_topo-sort.pdf)][[notes]({{ site.baseurl }}/assets/pdfs/03-12_notes.pdf)]
    : [JE Ch.5](https://jeffe.cs.illinois.edu/teaching/algorithms/book/05-graphs.pdf) 
 : **HW 4 due**{: .label .label-red }
 

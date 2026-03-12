@@ -10,3 +10,5 @@ List of handouts:
 * 2/5 HO-06 master theorem
 * 2/16 HO-07 Decrementing Functions
 * 3/3 HO-08 Dynamic Programming
+* 3/5 HO-09 Analyzing Algorithms (including Loop Invariants)
+* 3/12 HO-10 Topological Sort
