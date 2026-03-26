@@ -19,7 +19,7 @@ learning.
 
 Your group lecture should:
 
-* Be 70 minutes in length (reserving five mintues for the end-of lecture survey)
+* Be 60-70 minutes in length (reserving five mintues for the end-of lecture survey)
 * Clearly explain key concepts, terms, and ideas related to the topic
 * Include visual or instructional support (e.g., slides, handouts, demonstrations)
 * Actively engage the class (e.g., discussion questions, brief activities, examples, or case studies)
