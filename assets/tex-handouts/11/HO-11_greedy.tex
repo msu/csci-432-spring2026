@@ -1,0 +1,177 @@
+\documentclass{article}
+
+\usepackage{../handouts}
+
+\title{CSCI 432 Handout 11: Greedy Algorithms}
+\author{Name: \rule{3in}{0.15mm}}
+
+\begin{document}
+\maketitle
+
+\section*{Class Scheduling}
+
+Consider the problem of class scheduling. There are $n$ classes available, and
+you want to take the maximum number of classes.  Each class has a start time and
+a finish time:
+$$ C = \{ c_i =(s_i,f_i) \}_{i=1}^n.$$
+What strategies allow you to take the most classes? For this, we will consider
+several different strategies. We will call a strategy optimal if it is one that
+maximizes the number of classes that you can take.
+
+For the strategies listed
+below, are they optimal or not? If not, provide a counter-example to prove that
+it is not optimal.
+
+\begin{enumerate}
+    \item Starts first: Choose the class that starts first, eliminate any
+        conflicts with that. Among the remaining, choose the class that starts
+        first and repeat this process until no classes are remaining.
+
+        \textbf{Answer}
+        \vspace{1in}
+
+    \item Starts last.
+
+        \textbf{Answer}
+        \vspace{1in}
+
+    \item Finishes first.
+
+        \textbf{Answer}
+        \vspace{1in}
+
+    \item Finishes last.
+
+        \textbf{Answer}
+        \vspace{1in}
+
+    \item Longest duration.
+
+        \textbf{Answer}
+        \vspace{1in}
+
+    \item Shortest duration.
+
+        \textbf{Answer}
+        \vspace{1in}
+
+    \item Bonus: Randomized selection (here, find an example that shows where
+        random selection will have a low probability of finding an optimal
+        solution).
+
+        \textbf{Answer}
+        \vspace{1in}
+
+\end{enumerate}
+
+\newpage
+\section*{Hoffman Codes}
+
+Consider the following code (generated using CatChat\footnote{Prompt was ``latex
+table with a prefix-free code for the alphabet.'' The answer had a formatting
+problem, but was easily fixable. However, the code given was not prefix free, so
+I had to fix that.}:
+
+\begin{table}[ht]
+    \centering
+    \caption{Prefix‑free binary code for the English alphabet}
+    \label{tab:prefixfree}
+    \begin{tabular}{cl}
+        \toprule
+        \textbf{Letter} & \textbf{Codeword} \\
+        \midrule
+        A & 00000 \\
+        B & 11111000 \\
+        C & 111100 \\
+        D & 1111101 \\
+        E & 01100 \\
+        F & 1111010 \\
+        G & 1111011 \\
+        H & 1100 \\
+        I & 0010 \\
+        J & 111111100 \\
+        K & 111111101 \\
+        L & 111001 \\
+        M & 11111001 \\
+        N & 0100 \\
+        O & 00010 \\
+        P & 0011 \\
+        Q & 0111 \\
+        R & 1101 \\
+        S & 111010 \\
+        T & 0101 \\
+        U & 111000 \\
+        V & 00001 \\
+        W & 111011 \\
+        X & 01101 \\
+        Y & 00011 \\
+        Z & 11111111 \\
+        \bottomrule
+    \end{tabular}
+\end{table}
+
+\begin{enumerate}\setcounter{enumi}{2}
+
+    \item Can you decode the following message:
+
+            0110011111001000000010111001%
+            1111100101100%
+            1111010000101101%
+            11111000000100100111000111010
+
+        \textbf{Answer}
+        \vspace{1in}
+
+    \pagebreak
+    \item For this code, draw a binary tree, withe the encoded characters stored at the leaf
+        nodes.
+
+        \textbf{Answer}
+        \vspace{1in}
+
+    \item For the Huffman strategy of ``Merge the two least frequent letters and
+        recurse", draw a the Huffman tree for the following frequency count:
+
+        \begin{flushleft}
+        \begin{table}[ht]
+            \caption{Random frequency count for letters in an imaginary text
+            that loves weird letters.}
+            \label{tab:prefixfree}
+            \begin{tabular}{cl}
+                \toprule
+                \textbf{Letter} & \textbf{Codeword} \\
+                \midrule
+                A &  7\\
+                B & 13\\
+                C &  2\\
+                D & 15\\
+                E &  4\\
+                F & 12\\
+                G &  0\\
+                H &  9\\
+                I &  5\\
+                J & 11\\
+                K &  1\\
+                L & 14\\
+                M &  3\\
+                N & 10\\
+                O &  6\\
+                P &  8\\
+                Q & 15\\
+                R &  2\\
+                S & 13\\
+                T &  4\\
+                U &  9\\
+                V &  0\\
+                W & 12\\
+                X &  5\\
+                Y &  7\\
+                Z & 11\\
+                \bottomrule
+            \end{tabular}
+        \end{table}
+        \end{flushleft}
+
+\end{enumerate}
+
+\end{document}
