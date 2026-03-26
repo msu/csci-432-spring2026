@@ -7,5 +7,5 @@ title: Greedy Algorithms
    : [DNF Wiki](https://en.wikipedia.org/wiki/Dutch_national_flag_problem), [Cornell Notes](https://www.cs.cornell.edu/courses/JavaAndDS/files/sort9DutchFlag.pdf)
 
 26 March
-: Greedy Algorithms [[notes]({{ site.baseurl }}/assets/pdfs/03-26_notes.pdf)]
+: Greedy Algorithms [[H0-11]({{ site.baseurl }}/assets/pdfs/HO-11_greedy.pdf)][[notes]({{ site.baseurl }}/assets/pdfs/03-26_notes.pdf)]
    : [JE Ch.4](https://jeffe.cs.illinois.edu/teaching/algorithms/book/04-greedy.pdf), [Gas Fueling Problem](https://medium.com/@TheGeekiestOne/greedy-algorithms-the-car-fueling-problem-a35ccc9bb011) 
