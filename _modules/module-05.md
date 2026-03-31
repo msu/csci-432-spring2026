@@ -3,12 +3,12 @@ title: Advanced Graph Algorithms
 ---
 
 31 March
-: Shortest Paths [[notes]({{ site.baseurl }}/assets/pdfs/03-31_notes.pdf)]
+: Shortest Paths [[H0-12]({{ site.baseurl }}/assets/pdfs/HO-12_graphalgs.pdf)][[notes]({{ site.baseurl }}/assets/pdfs/03-31_notes.pdf)]
    : [JE Ch.6](https://jeffe.cs.illinois.edu/teaching/algorithms/book/06-dfs.pdf) 
 : **Quiz**{: .label .label-darkorchid}
 
 2 April
-: Connected Components [[notes]({{ site.baseurl }}/assets/pdfs/04-02_notes.pdf)]
+: TBD [[notes]({{ site.baseurl }}/assets/pdfs/04-02_notes.pdf)]
 : **HW 5 due**{: .label .label-red }
 
 7 April
