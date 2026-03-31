@@ -8,7 +8,7 @@ title: Advanced Graph Algorithms
 : **Quiz**{: .label .label-darkorchid}
 
 2 April
-:  Shortest Paths [[notes]({{ site.baseurl }}/assets/pdfs/04-02_notes.pdf)]
+: Connected Components [[notes]({{ site.baseurl }}/assets/pdfs/04-02_notes.pdf)]
 : **HW 5 due**{: .label .label-red }
 
 7 April
