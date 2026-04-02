@@ -23,7 +23,8 @@ Here, we provide pseudocode for Dijkstra's SP algorithm for easy reference (this
 computes just the distance; can you adjust this to find the path too?):%
 \footnote{Initial pseudocode was generated from CatChat, using
 the prompt ``simple psuedocode for dijkstra in latex using the algorithmic
-package (not algpseudocode)''}
+package (not algpseudocode).'' The output was far from perfect, so what you see
+here is an edited version of that~output.}
 \begin{algorithm}[H]
     \caption{Dijkstra’s Shortest‑Path Algorithm}
     \label{alg:dijkstra}
@@ -31,22 +32,22 @@ package (not algpseudocode)''}
         \REQUIRE A weighted, directed graph $G=(V,E, \omega)$ with non‑negative
         edge weights;
         a source vertex $s\in V$
-        \ENSURE Shortest‑path distances $\dist[v]$ for all $v\in V$
+        \ENSURE Shortest‑path distances $\dist(v)$ for all $v\in V$
         % and predecessor map $prev[v]$
 
         \STATE Initialize $\dist$, a data structure indexed by $V$, with value $\infty$ for all
             vertices except $\dist(s)=0$
         %\STATE Initialize \prev, indexed by $V$, values null everywhere
         \STATE $Q$ min-priority queue storing the elements off $V$, with $\dist[v]$ the
-        priority of $v$ for all $v$)
+        priority of $v$ for all $v$
         \WHILE{$Q \neq \emptyset$}
-            \STATE $u \leftarrow \pop(Q)$
+            \STATE $u \leftarrow Q.\pop()$
             \FOR{each $(u,v)$ out of $u$}
                 \STATE $alt \leftarrow \dist(u) + \omega(u,v)$
                 \IF{$alt < \dist(v)$}
                 \STATE $\dist[v] \leftarrow alt$
                 %\STATE $prev[v] \leftarrow u$
-                \STATE $\textsc{Decrease-Key}(Q,v,\dist[v])$
+                \STATE $Q.\textsc{Decrease-Key}(v,\dist[v])$
                 \ENDIF
             \ENDFOR
         \ENDWHILE
