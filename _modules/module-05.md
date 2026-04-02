@@ -8,7 +8,7 @@ title: Advanced Graph Algorithms
 : **Quiz**{: .label .label-darkorchid}
 
 2 April
-: TBD [[notes]({{ site.baseurl }}/assets/pdfs/04-02_notes.pdf)]
+: Interpolated SPs [[H0-13]({{ site.baseurl }}/assets/pdfs/HO-13_graphinterp.pdf)][[notes]({{ site.baseurl }}/assets/pdfs/04-02_notes.pdf)]
 : **HW 5 due**{: .label .label-red }
 
 7 April

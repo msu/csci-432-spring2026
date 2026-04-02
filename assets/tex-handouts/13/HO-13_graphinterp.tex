@@ -1,0 +1,173 @@
+\documentclass{article}
+
+\usepackage{../handouts}
+
+\title{CSCI 432 Handout 12: Shortest Paths in Linearly Interpolated Graphs}
+\date{2 April 2026}
+\author{Name: \rule{3in}{0.15mm}}
+
+\begin{document}
+\maketitle
+
+\begin{prob}[SP in Linearly Interpolated Graphs]
+    Given two weighted, directed graphs $G_0=(V,E,\omega_0)$
+    and~$G_1=(V,E,\omega_1)$, define the linear interpolation at parameter $\tau \in
+    [0,1]$ to be $$G_{\tau}:=(V,E,\omega_t := \tau\omega_1 + (1-\tau)\omega_0).$$
+    Given a source $s \in V$ and a sink $\tau \in V$, we want to a data structure that will efficiently
+    answer the query of: for $\tau \in [0,1]$, what is the shortest path from $s$ to
+    $t$?
+\end{prob}
+
+Recall Dijkstra's algorithm from our last class period.
+Here, we provide pseudocode for Dijkstra's SP algorithm for easy reference (this
+computes just the distance; can you adjust this to find the path too?):%
+\footnote{Initial pseudocode was generated from CatChat, using
+the prompt ``simple psuedocode for dijkstra in latex using the algorithmic
+package (not algpseudocode)''}
+\begin{algorithm}[H]
+    \caption{Dijkstra’s Shortest‑Path Algorithm}
+    \label{alg:dijkstra}
+    \begin{algorithmic}[1]   % the optional argument sets the line‑number spacing
+        \REQUIRE A weighted, directed graph $G=(V,E, \omega)$ with non‑negative
+        edge weights;
+        a source vertex $s\in V$
+        \ENSURE Shortest‑path distances $\dist[v]$ for all $v\in V$
+        % and predecessor map $prev[v]$
+
+        \STATE Initialize $\dist$, a data structure indexed by $V$, with value $\infty$ for all
+            vertices except $\dist(s)=0$
+        %\STATE Initialize \prev, indexed by $V$, values null everywhere
+        \STATE $Q$ min-priority queue storing the elements off $V$, with $\dist[v]$ the
+        priority of $v$ for all $v$)
+        \WHILE{$Q \neq \emptyset$}
+            \STATE $u \leftarrow \pop(Q)$
+            \FOR{each $(u,v)$ out of $u$}
+                \STATE $alt \leftarrow \dist(u) + \omega(u,v)$
+                \IF{$alt < \dist(v)$}
+                \STATE $\dist[v] \leftarrow alt$
+                %\STATE $prev[v] \leftarrow u$
+                \STATE $\textsc{Decrease-Key}(Q,v,\dist[v])$
+                \ENDIF
+            \ENDFOR
+        \ENDWHILE
+        \RETURN $\dist$
+    \end{algorithmic}
+\end{algorithm}
+
+\pagebreak
+\section*{Understanding the Problem}
+
+\begin{figure}
+    \centering
+    \begin{subfigure}[b]{0.4\textwidth}
+        \includegraphics[width=.9\textwidth]{graph-0}
+        \caption{$G_0$}
+        \label{fig:graph-0}
+    \end{subfigure}
+    \qquad
+    \begin{subfigure}[b]{0.4\textwidth}
+        \includegraphics[width=.9\textwidth]{graph-1}
+        \caption{$G_1$}
+        \label{fig:graph-1}
+    \end{subfigure}
+    \caption{The starting and ending graphs that we linearly interpolate
+    between. Here, let all edges be directed from left to right.}\label{fig:graph}
+\end{figure}
+
+
+\begin{enumerate}
+    \item For $G_0$ and $G_1$, use Dijkstra's algorithm to compute
+        a shortest path from $s$ to $t$ in each graph (denote them by $p_0$ and
+        $p_1$, respectively). What are their lengths
+        (denote them by $\ell_0$ and $\ell_1$, respectively).
+
+        \textbf{Answer}
+        \vspace{1in}
+
+    \item Compute $G_{0.5}$ and find a shortest path from $s$ to $t$.  What is
+        its length? (Denote the path and lengthy by $p_{0.5}$ and
+        $\ell_{0.5}$).
+
+        \textbf{Answer}
+        \includegraphics[height=2in]{graph-noweights}
+
+    \pagebreak
+    \item Compute $G_{0.25}$ and find the length of a shortest path from $s$ to
+        $t$.  What is its length?
+
+        \textbf{Answer}
+        \includegraphics[height=2in]{graph-noweights}
+
+    \item For which value of $t$ are the lengths of $p_0$ and $p_1$ the same
+        (Note: there is one value $t$ for which this holds; we denote this by
+        $t_{same}$)?
+
+        \textbf{Answer}
+        \vspace{1in}
+
+    \item What are the values of all paths between $s$ and $t$ at $t_{same}$. Is
+        there any time that the shortest path is not $p_0$ or $p_1$? (Hint: look
+        at the graphs of path length versus parameter $\tau$ for all paths from $s$
+        to $t$).
+
+        \textbf{Answer}
+        \vspace{1in}
+
+    \item Provide an example of two graphs for which there exists a $t$ for which
+        $p_t \notin \{p_0,p_1\}$.
+
+        \textbf{Answer}
+
+\end{enumerate}
+
+
+\pagebreak
+\section*{The Algorithm}
+
+\begin{figure}
+    \centering
+    \includegraphics{path-lengths}
+    \caption{Path lengths.}
+\end{figure}
+
+\begin{enumerate}
+    \item What are some observations we have about the plot above? When are the
+        shortest paths not unique?
+
+        \textbf{Answer}
+        \vspace{2in}
+
+    \pagebreak
+\item Consider the linearly interpolated graph in \figref{othergraph}, along with the graph
+        of the lengths of all paths from~$s$ to $t$.
+        What are the shortest path representatives for each parameter $\tau$?
+
+    \begin{figure}
+        \centering
+        \begin{subfigure}[b]{0.3\textwidth}
+            \includegraphics[width=.9\textwidth]{othergraph-0}
+            \caption{$H_0$}
+            \label{fig:graph-0}
+        \end{subfigure}
+        ~
+        \begin{subfigure}[b]{0.3\textwidth}
+            \includegraphics[width=.9\textwidth]{othergraph-1}
+            \caption{$H_1$}
+            \label{fig:graph-1}
+        \end{subfigure}
+        ~
+        \begin{subfigure}[b]{0.33\textwidth}
+            \includegraphics[width=.9\textwidth]{otherpath-lengths}
+            \caption{Path Lengths}
+            \label{fig:graph-1}
+        \end{subfigure}
+        \caption{The starting and ending graphs that we linearly interpolate
+        between. Here, let all edges be directed from left to
+        right.}\label{fig:othergraph}
+    \end{figure}
+
+        \textbf{Answer}
+
+\end{enumerate}
+
+\end{document}

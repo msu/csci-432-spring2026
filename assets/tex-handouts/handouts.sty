@@ -28,6 +28,9 @@
 \renewcommand{\algorithmicensure}{\textbf{Output:}}
 \renewcommand{\algorithmiccomment}[2]{\hspace{#1}$\triangleright$ {#2} \hfill }
 
+\DeclareMathOperator{\dist}{dist}
+\DeclareMathOperator{\pop}{pop}
+
 % ... common symbols
 \def\N{{\mathbb N}}
 \def\Q{{\mathbb Q}}
@@ -38,7 +41,7 @@
 \newcommand{\ceil}[1]{\lceil {#1} \rceil}
 
 % ... for figures
-\usepackage{graphicx,subfig}
+\usepackage{graphicx,subcaption}
 \usepackage{caption}
 \graphicspath{{./}{figs/}}
 
@@ -135,6 +138,7 @@
 \newtheorem{theorem}{Theorem}
 \newtheorem{definition}[theorem]{Definition}
 \newtheorem{lemma}[theorem]{Lemma}
+\newtheorem{prob}[theorem]{Problem}
 
 % ... for self-notes:
 \newcommand{\todo}[1]{{\color{red}[[\textbf{XXX TODO: }#1]]}}
