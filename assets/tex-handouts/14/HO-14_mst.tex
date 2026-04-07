@@ -1,0 +1,133 @@
+\documentclass{article}
+
+\usepackage{../handouts}
+
+\title{CSCI 432 Handout 14: Minimum Spanning Trees}
+\date{7 April 2026}
+\author{Name: \rule{3in}{0.15mm}}
+
+\begin{document}
+\maketitle
+
+\section*{Examples}
+
+\begin{enumerate}
+    \item Draw an example of a weighted graph with two distinct minimum spanning trees.
+
+        \textbf{Answer}
+        \vspace{2in}
+
+    \item What assumptions will remove this issue?
+
+        \textbf{Answer}
+        \vspace{2in}
+
+    \item For the next two questions, suppose we have a weighted graph
+        $G=(V,E,\omega)$ meeting the asusmptions listed above whose minimum
+        spanning tree is $T$.  Let $F$ be a subgraph of $T$.
+
+        If $e \in E \setminus F$ and both endpoints of $e$ are in the same
+        component of $F$, is $e \in T$? Why or why not?
+
+        \textbf{Answer}
+        \vspace{2in}
+
+    \item Let $E' \in E \setminus F$ be the set of edges such that their
+        endpoints are in different components of $F$.  Let $e$ be the
+        minimum-weight edge in $E'$. Is $e \in T$? Why or why not?
+
+        \textbf{Answer}
+        \vspace{2in}
+
+
+
+    \item What assumptions will remove this issue?
+
+        \textbf{Answer}
+        \vspace{2in}
+
+
+
+\end{enumerate}
+
+\pagebreak
+\section*{Bor\r{u}vka's Algorithm}
+
+In the textbook, Dr.~Erickson describes a generic MST algorithm: We start with
+$F$ as the set of vertices (a spanning forest, if you will), and add edges to
+$R$ until we find a MST.
+
+In Bor\r{u}vka's algorithm, all safe edges are added at each step.
+
+\begin{enumerate}
+
+    \item Walk through an example, marking all safe edges and all useless edges
+        at each step. (The graph you start with should have at least eight vertices
+        and 10 edges, and should satisfy the assumptions we listed on the
+        first page).
+
+        \textbf{Answer}
+        \vspace{3in}
+
+    \item What is an observation you have about the useless edges?
+
+        \textbf{Answer}
+        \vspace{3in}
+
+    \item What is the loop invariant for this algorithm?
+
+        \textbf{Answer}
+        \vspace{3in}
+
+\end{enumerate}
+
+
+\section*{Jarnik's / Prim's Algorithm}
+
+In Jarnik's algorithm, we have a subtree $T'$ of the MST $T'$.  We obtain this
+by starting at an arbitrary vertex and adding the minimum safe edge for $T'$ at
+each step.
+
+
+\begin{enumerate}
+
+    \item Walk through an example. (The graph you start with should have at least eight vertices
+        and 10 edges, and should satisfy the assumptions we listed on the
+        first page).
+
+        \textbf{Answer}
+        \vspace{3in}
+
+    \item What is the loop invariant for this algorithm?
+
+        \textbf{Answer}
+        \vspace{3in}
+
+    \item What are
+        some pros/cons of using Jarnik's versus Bor\r{u}vka's algorithms?
+
+        \textbf{Answer}
+        \vspace{3in}
+
+\end{enumerate}
+
+
+\section*{Kruskal's Algorithm}
+
+In Kruskal's algorithm, we again have a spanning forest $F$ at each stage,
+initialized to each vertex is its own tree. At each step, we pick the minimum
+weight edge and add it to $F$, as long as it is not useless.
+
+\begin{enumerate}
+
+    \item Walk through an example.
+        (The graph you start with should have at least eight vertices
+        and 10 edges, and should satisfy the assumptions we listed on the
+        first page).
+
+        \textbf{Answer}
+        \vspace{3in}
+
+\end{enumerate}
+
+\end{document}

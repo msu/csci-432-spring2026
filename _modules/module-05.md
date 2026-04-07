@@ -12,8 +12,8 @@ title: Advanced Graph Algorithms
 : **HW 5 due**{: .label .label-red }
 
 7 April
-: Minimum Spanning Trees [[notes]({{ site.baseurl }}/assets/pdfs/04-07_notes.pdf)]
-   : [JE Ch.7](https://jeffe.cs.illinois.edu/teaching/algorithms/book/06-dfs.pdf) 
+: Minimum Spanning Trees [[H0-14]({{ site.baseurl }}/assets/pdfs/HO-14_mst.pdf)][[notes]({{ site.baseurl }}/assets/pdfs/04-07_notes.pdf)]
+   : [JE Ch.7](https://jeffe.cs.illinois.edu/teaching/algorithms/book/07-mst.pdf) 
 
 9 April
 : **Exam 2**{: .label .label-purple } (focus on DP & Greedy Algorithms)
