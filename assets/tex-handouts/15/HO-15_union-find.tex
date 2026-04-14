@@ -1,0 +1,127 @@
+\documentclass{article}
+
+\usepackage{../handouts}
+
+\title{CSCI 432 Handout 15: Union Find Algorithm}
+\date{7 April 2026}
+\author{Name: \rule{3in}{0.15mm}}
+
+\begin{document}
+\maketitle
+
+\section*{Graphs}
+
+\begin{enumerate}
+    \item If we have a VERTEX object, what sorts of data/attributes might it
+        have?.
+
+        \textbf{Answer}
+        \vspace{2in}
+
+    \item If we have an EDGE object, what sorts of data/attributes might it
+        have?.
+
+        \textbf{Answer}
+        \vspace{2in}
+
+    \pagebreak
+        {\centering \includegraphics{graph}}
+
+    \item Show how to store the graph above as an incidence matrix ...
+
+        \textbf{Answer}
+        \vspace{2in}
+
+    \item ... and as an adjacency list.
+
+        \textbf{Answer}
+        \vspace{2in}
+
+\end{enumerate}
+
+\pagebreak
+\section*{Counting Connected Components}
+
+\begin{algorithm}[H]
+    \caption{Count Components}
+    \label{alg:union-find}
+    \begin{algorithmic}[1]   % the optional argument sets the line‑number spacing
+        \REQUIRE A graph $G=(V,E)$
+        \ENSURE The number of connected components in $G$.
+
+        \STATE Initialize $S$, a union-find data structure with the vertex set $V$
+        \STATE $E' \gets E$
+        \WHILE{$E' \neq \emptyset$}
+            \STATE $e \gets E'.pop()$
+            \STATE $s_1 \gets S.find(e.head)$
+            \STATE $s_2 \gets S.find(e.tail)$
+            \IF{$s_1 \neq s_2$}
+                \STATE $S.union(s_1,s_2)$
+            \ENDIF
+        \ENDWHILE
+        \RETURN $S.size()$
+    \end{algorithmic}
+\end{algorithm}
+
+\begin{enumerate}
+
+    \item In \algref{union-find}, $S$ is a data structure that keeps track of
+        the connected components of a graph that is initially just the vertex
+        set, and builds up to the full graph $G$ by adding one vertex at a time.
+        Without getting into more specifics, walk through running this algorithm
+        for the example graph on the previous page. (We'll look into
+        implementation details next, for now, just think `what are the connected
+        components' at each step as you are walking through).
+
+        \textbf{Answer}
+        \vspace{3in}
+
+    \newpage
+    \item Quick Find: Suppose $S$ keeps track of connected components in an array $A$. Here,
+        $A[i]$ would store the id of the component for vertex $V[i]$. What would
+        the time complexity of the union and find operations be with this
+        implementation? Walk through using this data structure on the example
+        graph.
+
+        \textbf{Answer}
+        \vspace{3in}
+
+    \item Quick union: Suppose $S$ stores the connected components as rooted
+        trees.  Here, each vertex would be a node in a (possibly one-vertex)
+        tree, and the id of the connected component is the label of the root of
+        that tree. What would the time complexity of the union and find
+        operations be with this implementation? Walk through using this data
+        structure on the example graph.
+
+        \textbf{Answer}
+        \vspace{3in}
+
+\end{enumerate}
+
+
+\section*{Two Heuristics}
+
+Using the Fast union approach, we add two heuristics for improved runtime!
+
+\begin{enumerate}
+
+    \item Depth: Associate a variable named `rank' for each rooted tree. When unioning
+        (merging) two rooted trees together, add the smaller to the larger (as
+        measured by the rank variable).  If
+        there is a tie, pick arbitrarily and add one to the rank.
+        Give this a try with the example graph.
+
+        \textbf{Answer}
+        \vspace{3in}
+
+    \item Fatten: When running a find operation (going up the parent until I
+        find the root), directly connect each vertex encountered to the root.
+        Give this a try with the example graph, using both the rank and fatten
+        improvements.
+
+        \textbf{Answer}
+        \vspace{3in}
+\end{enumerate}
+
+
+\end{document}
