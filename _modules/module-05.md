@@ -23,7 +23,7 @@ title: Advanced Graph Algorithms
 : **Quiz**{: .label .label-darkorchid}
 
 16 April
-: More Graph Algorithms [[notes]({{ site.baseurl }}/assets/pdfs/04-16_notes.pdf)]
+: **Project Presentations**{: .label .label-red }  
 : **HW 6 due**{: .label .label-red }
 
 21 April
@@ -31,9 +31,10 @@ title: Advanced Graph Algorithms
 
 23 April
 : **Project Presentations**{: .label .label-red }
+ [[Shor]({{ site.baseurl }}/assets/pdfs/HO-shor.pdf)]
 
 28 April
 : **Project Presentations**{: .label .label-red }
 
 30 April
-: **Project Presentations**{: .label .label-red }
+: **Project Presentation:**{: .label .label-red } Multithreaded Merge Sort
