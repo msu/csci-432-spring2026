@@ -24,17 +24,22 @@ title: Advanced Graph Algorithms
 
 16 April
 : **Project Presentations**{: .label .label-red }  
+ [[Skyline]({{ site.baseurl }}/assets/pdfs/HO-skyline.pdf)]
 : **HW 6 due**{: .label .label-red }
 
 21 April
 : **Project Presentations**{: .label .label-red }
+ [[Multithreaded merge sort]({{ site.baseurl }}/assets/pdfs/HO-mms.pdf)]
 
 23 April
 : **Project Presentations**{: .label .label-red }
- [[Shor]({{ site.baseurl }}/assets/pdfs/HO-shor.pdf)]
+ [[Shor's algorithm]({{ site.baseurl }}/assets/pdfs/HO-shor.pdf)]
 
 28 April
 : **Project Presentations**{: .label .label-red }
+ [[Smallest enclosing circle]({{ site.baseurl }}/assets/pdfs/HO-sec.pdf)]
+   : [Welzl 1991](https://www.ibr.cs.tu-bs.de/courses/ws2122/ag/otherstuff/smallest-disk-welzl.pdf) 
 
 30 April
-: **Project Presentation:**{: .label .label-red } Multithreaded Merge Sort
+: **Project Presentation:**{: .label .label-red } 
+ [[RSA]({{ site.baseurl }}/assets/pdfs/HO-rsa.pdf)]
