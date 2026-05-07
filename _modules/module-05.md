@@ -23,8 +23,7 @@ title: Advanced Graph Algorithms
 : **Quiz**{: .label .label-darkorchid}
 
 16 April
-: **Project Presentations**{: .label .label-red }  
- [[Skyline]({{ site.baseurl }}/assets/pdfs/HO-skyline.pdf)]
+: **Project Presentations**{: .label .label-red } [[Skyline]({{ site.baseurl }}/assets/pdfs/HO-skyline.pdf)]
 : **HW 6 due**{: .label .label-red }
 
 21 April
@@ -36,9 +35,8 @@ title: Advanced Graph Algorithms
  [[Shor's algorithm]({{ site.baseurl }}/assets/pdfs/HO-shor.pdf)]
 
 28 April
-: **Project Presentations**{: .label .label-red }
- [[Smallest enclosing circle]({{ site.baseurl }}/assets/pdfs/HO-sec.pdf)]
-   : [Welzl 1991](https://www.ibr.cs.tu-bs.de/courses/ws2122/ag/otherstuff/smallest-disk-welzl.pdf) 
+: **Project Presentations**{: .label .label-red } [[Smallest enclosing circle]({{ site.baseurl }}/assets/pdfs/HO-sec.pdf)]
+    : [Welzl 1991](https://www.ibr.cs.tu-bs.de/courses/ws2122/ag/otherstuff/smallest-disk-welzl.pdf) 
 
 30 April
 : **Project Presentation:**{: .label .label-red } 
