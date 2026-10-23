@@ -3,16 +3,16 @@ title: Advanced Graph Algorithms
 ---
 
 31 March
-: Shortest Paths [[H0-12]({{ site.baseurl }}/assets/pdfs/HO-12_graphalgs.pdf)][[notes]({{ site.baseurl }}/assets/pdfs/03-31_notes.pdf)]
+: Shortest Paths [[HO-12]({{ site.baseurl }}/assets/pdfs/HO-12_graphalgs.pdf)][[notes]({{ site.baseurl }}/assets/pdfs/03-31_notes.pdf)]
    : [JE Ch.6](https://jeffe.cs.illinois.edu/teaching/algorithms/book/06-dfs.pdf) 
 : **Quiz**{: .label .label-darkorchid}
 
 2 April
-: Interpolated SPs [[H0-13]({{ site.baseurl }}/assets/pdfs/HO-13_graphinterp.pdf)][[notes]({{ site.baseurl }}/assets/pdfs/04-02_notes.pdf)]
+: Interpolated SPs [[HO-13]({{ site.baseurl }}/assets/pdfs/HO-13_graphinterp.pdf)][[notes]({{ site.baseurl }}/assets/pdfs/04-02_notes.pdf)]
 : **HW 5 due**{: .label .label-red }
 
 7 April
-: Minimum Spanning Trees [[H0-14]({{ site.baseurl }}/assets/pdfs/HO-14_mst.pdf)][[notes]({{ site.baseurl }}/assets/pdfs/04-07_notes.pdf)]
+: Minimum Spanning Trees [[HO-14]({{ site.baseurl }}/assets/pdfs/HO-14_mst.pdf)][[notes]({{ site.baseurl }}/assets/pdfs/04-07_notes.pdf)]
    : [JE Ch.7](https://jeffe.cs.illinois.edu/teaching/algorithms/book/07-mst.pdf) 
 
 9 April

@@ -3,7 +3,7 @@ title: Recursion
 ---
 
 27 Jan
-: Recurrence Relations [[H0-4]({{ site.baseurl }}/assets/pdfs/HO-04_recur-relations.pdf)]
+: Recurrence Relations [[HO-4]({{ site.baseurl }}/assets/pdfs/HO-04_recur-relations.pdf)]
   : [JE Append. II](https://jeffe.cs.illinois.edu/teaching/algorithms/notes/99-recurrences.pdf) 
 
 29 Jan
@@ -13,7 +13,7 @@ title: Recursion
 : **HW 1 due**{: .label .label-red }
 
 3 Feb
-: Recursion Invariants [[H0-5]({{ site.baseurl }}/assets/pdfs/HO-05_recur-inv.pdf)][[notes]({{ site.baseurl }}/assets/pdfs/02-03_notes.pdf)]
+: Recursion Invariants [[HO-5]({{ site.baseurl }}/assets/pdfs/HO-05_recur-inv.pdf)][[notes]({{ site.baseurl }}/assets/pdfs/02-03_notes.pdf)]
 
 5 Feb
 : Master Method [[HO-6]({{ site.baseurl }}/assets/pdfs/HO-06_master-theorem.pdf)][[notes]({{ site.baseurl }}/assets/pdfs/02-05_notes.pdf)]
